@@ -1,6 +1,7 @@
 import { h } from "https://deno.land/x/sift@0.1.6/mod.ts";
 
-export default function NotFoundPage({ children }) {
+// export default function NotFoundPage({ children }) {
+export default function NotFoundPage(request) {
   return (<html lang="ja">
     <head>
       <meta charSet="UTF-8" />

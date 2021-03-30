@@ -1,6 +1,7 @@
 import { h } from "https://deno.land/x/sift@0.1.6/mod.ts";
 
-export default function BaseLayout({ children }) {
+// export default function BaseLayout({ children }) {
+export default function BaseLayout( request ) {
   return (<html lang="en">
     <head>
       <meta charSet="UTF-8" />
