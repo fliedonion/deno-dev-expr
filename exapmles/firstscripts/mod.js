@@ -1,9 +1,9 @@
 import { serve } from "https://deno.land/x/sift@0.1.6/mod.ts";
-import baseLayout from "./baselayout.jsx";
+import index from "./pages/index.jsx";
 import notFound from "./notfound.jsx";
 
 serve({
-  "/": baseLayout,
+  "/": index,
   "/empty": () => new Response(`<html>
     <head><title>Empty</title></head>
     <body>

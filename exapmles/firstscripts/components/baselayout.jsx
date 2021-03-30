@@ -1,8 +1,7 @@
 import { h } from "https://deno.land/x/sift@0.1.6/mod.ts";
 
-// export default function BaseLayout({ children }) {
-export default function BaseLayout( request ) {
-  return (<html lang="en">
+export default function Layout({ children }) {
+  return (<html lang="ja">
     <head>
       <meta charSet="UTF-8" />
       <meta
@@ -11,7 +10,7 @@ export default function BaseLayout( request ) {
       />
     </head>
     <body>
-      Hello Layout
+      { children }
     </body>
   </html>);
 }
