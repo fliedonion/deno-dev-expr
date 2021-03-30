@@ -4,10 +4,10 @@ import error404 from "./pages/error404.jsx";
 
 serve({
   "/": index,
+  404: error404,
   "/empty": () => new Response(`<html>
     <head><title>Empty</title></head>
     <body>
     </body>
     </html>`, {headers: {"content-type": "text/html; charset=utf-8"}}),
-  404: error404,
 });
