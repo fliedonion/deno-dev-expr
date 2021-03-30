@@ -1,5 +1,3 @@
-// https://github.com/denoland/deploy_examples
-
 function handleRequest(request) {
   const { pathname } = new URL(request.url);
 
