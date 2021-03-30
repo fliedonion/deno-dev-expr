@@ -1,6 +1,6 @@
 import { serve } from "https://deno.land/x/sift@0.1.6/mod.ts";
 import index from "./pages/index.jsx";
-import notFound from "./notfound.jsx";
+import error404 from "./pages/error404.jsx";
 
 serve({
   "/": index,
@@ -9,5 +9,5 @@ serve({
     <body>
     </body>
     </html>`, {headers: {"content-type": "text/html; charset=utf-8"}}),
-  404: notFound,
+  404: error404,
 });
