@@ -3,8 +3,9 @@ import BaseLayout from "../components/baselayout.jsx";
 
 export default function indexPage(request) {
   const { params } = new URL(request.url);
+  const v = params.get("value");
 
   return (<BaseLayout>
-    Index Page { params }
+    Index Page { v }
   </BaseLayout>)
 }
